@@ -1,6 +1,6 @@
 Author - Christopher Holder
 
-Title: React Projects🔥🚀
+##Title: React Projects🔥🚀
 
 Introduction:
 Hello and welcome to this repository! Here you will find a list of all the React Projects I've worked on
