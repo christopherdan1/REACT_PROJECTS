@@ -1,3 +1,8 @@
+Learn about why I'm so passionate about React JS and how this framework makes the software development process more collaborative and seemless. Let's talk about why you should consider using React for your next project.
+Welcome to my portfolio. From experimental passion projects to commissioned work for clients, I’ve had the opportunity to create a variety of projects for this dynamic industry. I thrive on creative challenges and enjoy building strong relationships along the way. Explore my work below, and contact me directly to learn more.
+
+
+
 Author - Christopher Holder
 
 Title: React Projects🚀
