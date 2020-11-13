@@ -1,6 +1,6 @@
 Author - Christopher Holder
 
-##Title: React Projects🔥🚀
+##[Title: React Projects🔥🚀]
 
 Introduction:
 Hello and welcome to this repository! Here you will find a list of all the React Projects I've worked on
@@ -22,10 +22,10 @@ React is kinda tricky to run from your editor, there are a few steps you must fo
 
 Projects::
 
-Amazon Clone
-IMessage Clone
-Netflix Clone
-Hulu Clone
+##[Amazon Clone] |
+##(IMessage Clone) |
+Netflix Clone |
+Hulu Clone |
 WhatsApp
 
 
