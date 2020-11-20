@@ -21,11 +21,6 @@ React is kinda tricky to run from your editor, there are a few steps you must fo
 
 
 Projects::
-
-##[Amazon Clone] |
-##(IMessage Clone) |
-Netflix Clone |
-Hulu Clone |
-WhatsApp
-
-
+Lavish: secure banking
+Description: A secure credit-card banking application 
+Link https://lavish-efa15.web.app/
