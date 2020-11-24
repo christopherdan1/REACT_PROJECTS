@@ -1,0 +1,32 @@
+Nov 23
+
+React.js Coding Interview
+
+display list, fetch from an api, dislay pagination
+
+auth api
+
+I would like you to create a counter?
+
+React.js used:
+useState(0)
+onClick
+
+export default function App(){
+const [counter, setCounter] = useState(0)
+return(
+
+<p>{counter}</p>
+<button onClick={()=> {
+  setCounter(counter + 1)
+  }}>increase Counter</button>
+);  
+}
+
+I now would like you to display JSON  from the following API  https://randomuser.me/api?
+
+React used:
+
+npm used: 
+  axios
+  or fetch api
