@@ -26,7 +26,8 @@ return(
 I now would like you to display JSON  from the following API  https://randomuser.me/api?
 
 React used:
-
 npm used: 
   axios
   or fetch api
+
+  <button>Fetch Random Data</button>
