@@ -1,0 +1,36 @@
+React Interview Questions
+
+Event:
+
+ const handleClick = ()=>{
+
+ }
+
+onClick={handleClick}
+
+
+
+How does event delegation work in react?
+
+How does react handle events in a list element?
+
+List all the inbuilt hooks in react and their applications?
+-useState -useEffect -useRef -useContext
+
+What are some of the best practices using react hooks?
+follow the hooks rules
+use a linter & follow linter
+ 
+
+How often should you update your react version?
+(planning)
+
+1 hour coding interview?
+
+1)TODO LIST APP
+
+2)SEARCHABLE DROPDOWN
+
+3)DEEPLY NESTED DROPDOWN
+
+Take home test

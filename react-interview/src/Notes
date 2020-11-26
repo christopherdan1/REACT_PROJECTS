@@ -1,0 +1,158 @@
+Part 1
+
+1. Name Lifecyle Methods and their purpose?
+
+They describe how javascript loads | render | and interacts with the virtual DOM as a whole.
+Depending on your version of React, they include things like componentDidMount, componentWillMount; or useEffect, and react Hooks.
+
+Answer: 
+Lifecyle methods are changing
+There are 2 phases when you render a component: render and re-render.
+
+render phase:
+constructor = "[state, setState] = useState()", sets the initial state of the component
+static getDerivedStatedFromProps, older version of useEffect
+render | mandatory
+componentDidMount | third party methods
+
+re-render phase:
+  static getDerivedStatedFromProps
+  shouldComponentUpdate
+  render: getSanpshotBeforeUpdate (pre-commit)
+  componentDidUpdate
+
+
+2. Why do we use arrow functions in React?
+Arrow functions are known as anonomous functions. They are the latest standard javascript syntax ES6. They simplify function declaration, help you focus on the functionality, and not have to keep track of function names. 
+
+Answer: Arrow functions don't have their own this. , they take this. from their lexical scope.
+
+
+3. How to prevent components from re-rendering?
+...
+Answer: shouldComponentUpdate()
+React.PureComponent
+React.memo
+
+Part 2
+
+4. Explain Error Boundaries?
+
+Chris:
+
+Answer:
+<ErrorBoundaryComp>
+  <MyComp/>
+</ErrorBoundaryComp>
+static getDerivedStatedFromError, here you can have a fallback component to render on the Error
+componentDidCatch
+
+5. Best Lifecyle Method for making API calls?
+
+Answer: componentDidMount(lifecycles and time) | useEffect(state and synchronization with DOM)
+
+6. What are some React Patterns?
+context-api pattern, redux, all used to avoid prop-drilling and making data global and accessible wherever needed with reducers and providers.
+
+7. Why would you use React in your project?
+
+The decision has to be made based on the project.
+functional programming if you have a lot of javascript programmers
+react is ideal.
+Compared to other frameworks like Angular, you'd need to remember a lot of syntax.  
+There is no perfect answer to this you just have to explain a situation why you would use react.
+
+8. What is CSS in JS pattern?
+styled.components
+import CSS
+you can import certain fonts and styles as object to be able to pass inline css|JSX
+
+Answer: JSX
+
+
+
+Part 3 - Project Related
+
+9. Why can't you update state directly without setState()?
+virtual DOM
+
+Answer: 
+Because setState() will always trigger "re-rendering" of the component 
+in the process of 
+creating a copy of the state first => then modifies => passes to the setState with re-render
+directly passing throught the state won't do that. That's why you aren't allow to update the state 
+directly.
+
+10. How many ways can you conditionally render in react?
+
+if(exp){} else{},
+for(exp){//},
+switch(exp){case:...break; default:... }
+
+Answer:
+
+if (LoggedIn) {
+  return <Home/>
+}
+return <SignIn/>
+
+or {LoggedIn && <Home/>}
+
+or conditional operator:
+{LoggedIn ? (
+  <Home/>
+) : (<SignIn/>
+)}
+
+11. What are Fragments and why dow we use them?
+??
+
+12. How to do code-splitting in React?
+lazy loading.
+Loading the entire react application can slow down performance for the user especially if they are only viewing a few pages.
+To optimize this we can use something called "lazy loading" ~
+
+const LazyComp = React.lazy(() => import(`./lazyComp`));
+
+<Suspense fallback={<div>Loading...</div>}
+  <LazyComp />
+</Suspense>
+
+13. What are some alternatives to Redux?
+
+Answer:
+  MobX
+  apollo client + graphQL
+  RxJS
+
+14. What is redux middleware?
+the concept of middleware is adding another layer between you main layer process something before going to you main layer.
+i.e
+ui => post {Server} => [DB]
+    => action {reducer} => [store]
+
+if there is a fail to post request the store is still updated and now you'll have asynchronize data. to prevent this we use middleware.
+
+
+synchronization of db server and store(redux).
+
+
+15. Difference between redux-saga and redux-thunk?
+  redux middleware
+
+Answer:
+let a = 1;
+instead wrap in a function (Action Creator) i.e
+AC = () => let a = 1
+
+SAGA - you can catch and cancel functions
+function * gen(){
+  yield doFirst()
+  yield doSecond()
+}
+
+
+
+
+
+
