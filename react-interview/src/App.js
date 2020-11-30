@@ -1,12 +1,8 @@
-const Settings = lazy(() => import(`./components/Settings`));
-
+import { useState } from "react";
+import Counter from "./components/Counter";
 
 const App = () => {
-  return (
-    <div className="App">
-      
-    </div>
-  );
-}
+  return <Counter />;
+};
 
 export default App;

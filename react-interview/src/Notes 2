@@ -15,10 +15,13 @@ How does event delegation work in react?
 How does react handle events in a list element?
 
 List all the inbuilt hooks in react and their applications?
--useState -useEffect -useRef -useContext
+-useState -useEffect -useRef -useContext etc
 
 What are some of the best practices using react hooks?
 follow the hooks rules
+  Only Call Hooks at the Top Level,
+  Only Call Hooks from React Functions
+
 use a linter & follow linter
  
 
